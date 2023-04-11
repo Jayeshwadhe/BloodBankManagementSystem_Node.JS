@@ -1,0 +1,65 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="h2 p-1">Dashbord</div>
+            <div class="col-md-12">
+                <div class="card border-0 shadow d-flex text-center p-2  pt-3 text-weight-bold  m-3">
+                    Total Users
+                    <span>{{this.array.data[0].history}}</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 text-center shadow p-2  pt-3 text-weight-bold m-3">
+                    Total Donar
+                    <span>{{this.array.dataDonar[0].donar}}</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 text-center shadow p-2  pt-3 text-weight-bold m-3">
+                    Total Recipent
+                    <span>{{this.array.accepter[0].recipent}}</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0  text-center shadow p-2  pt-3 text-weight-bold m-3">
+                    Total Request
+                    <span>{{this.user}}</span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card border-0 shadow d-flex text-center p-2  pt-3 text-weight-bold  m-3">
+                    Total verified Users
+                    <span>{{this.array.verified[0].users}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<!-- charts -->
+<section>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="border-0 shadow p-2 m-3">
+                    <span>User</span>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow p-2 m-3">
+                    <span>Blood</span>
+                    <canvas id="myChartBlood"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow p-2 m-3">
+                    <span>Blood</span>
+                    <canvas id="myChartBlooddonar"></canvas>
+                </div>
+            </div>
+        </div>
+  
+</section>

@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+.limiter {
+    width: 100%;
+    margin: 0 auto
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1
+}
+
+.container-login100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.login_topimg {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    min-height: 185px;
+    position: relative;
+    background: #91B3D1 url(https://www.loginradius.com/blog/static/2cf3ab878e7f43130e8b8a4fe8b21e22/a3513/single-page-application.png) no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.login_topimg img {
+    width: 10%;
+    height: auto
+}
+
+.login_topimg .logo_wrap {
+    border-radius: 5px;
+    background: #fff;
+    padding: 13px 55px;
+    position: relative;
+    top: -21px;
+    margin: 10px auto;
+    max-width: 255px
+}
+
+#login .wrap-login100 {
+    background-color: #fff;
+    padding: 20px 45px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%
+}
+
+.login100-form-title {
+    font-size: 25px;
+    color: #243762;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block
+}
+.login100-form-subtitle {
+    font-size: 16px;
+    color: #243762;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block
+}
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1
+}
+#login input {
+    outline: none;
+    border: none
+}
+#login label {
+    display: inline-block;
+    margin-bottom: .5rem
+}
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1
+}
+
+
+::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+::placeholder {
+    opacity: 1;
+    transition: opacity .5s
+}
+
+*:focus::-webkit-input-placeholder {
+    opacity: 0
+}
+
+*:focus:-moz-placeholder {
+    opacity: 0
+}
+
+*:focus::-moz-placeholder {
+    opacity: 0
+}
+
+*:focus:-ms-input-placeholder {
+    opacity: 0
+}
+
+*:focus::placeholder {
+    opacity: 0
+}
+.w-full {
+    width: 100%
+}
+.p-b-30 {
+    padding-bottom: 30px
+}
+.m-b-16 {
+    margin-bottom: 16px
+}
+.r-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .full-width {
+    width: 100%;
+  }

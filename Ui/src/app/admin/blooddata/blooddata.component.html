@@ -1,0 +1,47 @@
+<div class="h2 ">Blood Info</div>
+<div class="row mx-0 mt-3 border-0">
+
+    <div class="col-md-6">
+        <div class="card border-0 m-3">
+            <h2 class="card-title">Recipent Blood</h2>
+            <table class="table border-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Blood_Group</th>
+                        <th scope="col">Amount of Blood</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of arryofrecipent;">
+                        <td scope="col">{{item._id.blood_g}}:</td>
+                        <td scope="col">{{item.totalBlood}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card border-0 m-3">
+            <h2 class="card-title">Donar Blood</h2>
+            <table class="table border-0">
+
+                <thead>
+                    <tr>
+                        <th scope="col">Blood_Group</th>
+                        <th scope="col">Amount of Blood</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of arryofDonar;">
+                        <td scope="col">{{item._id.blood_g}}:</td>
+                        <td scope="col">{{item.totalBlood}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,34 @@
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+    ul{
+        line-height: 200%;
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    /* iPads, Tablets */
+
+    ul{
+        line-height: 200%;
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    /* small screens, laptops */
+
+    ul{
+        line-height: 200%;
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Desktops, large screens */
+
+    ul{
+        line-height: 10vh;
+    }
+}

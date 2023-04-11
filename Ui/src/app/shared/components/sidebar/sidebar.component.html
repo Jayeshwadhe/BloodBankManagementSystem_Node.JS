@@ -1,0 +1,112 @@
+<!-- <div class="sidebar-heading">
+    <img src="../../../../assets/images/BBMS.jpg" alt="" style="width:100%;">
+</div> -->
+<ng-container *ngIf="role == 'Admin'">
+    <div class="list-group list-group-flush bg-dark text-white" style="height: calc(100vh - 48px);">
+        <div class="area">
+            <nav class="main-menu">
+                <div class="sidebar-heading">
+                    <img src="../../../../assets/images/banner3.jpg" width="100%">
+                </div>
+                <ul >
+                    <li>
+                        <a (click)="goTo()">
+                            
+                            <span class="nav-text" style="cursor: pointer;">
+                                Graphs and Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="goTodonar()">
+                            <span class="nav-text" style="cursor: pointer;">Total Donar</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a (click)="goToacceptor()">
+
+                            <span class="nav-text" style="cursor: pointer;">Total Acceptor</span> </a>
+
+                    </li>
+                    <li>
+                        <a (click)="Requeted()">
+
+                            <span class="nav-text" style="cursor: pointer;">
+                                Requested List
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="gotoverifieddat()">
+
+                            <span class="nav-text" style="cursor: pointer;">
+                                Verified Data
+                            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a (click)="gotoBlood()">
+
+                            <span class="nav-text" style="cursor: pointer;">
+                                Blood Data
+                            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a (click)="gotohi()">
+
+                            <span class="nav-text" style="cursor: pointer;">
+                                History
+                            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <span class="nav-text" style="cursor: pointer;">
+                                LogOut
+                            </span>
+                        </a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="role == 'User'">
+    <div class="list-group list-group-flush bg-dark text-white" style="  height: calc(100vh - 48px);">
+
+        <nav class="main-menu">
+            <div class="sidebar-heading">
+                <img src="../../../../assets/images/banner3.jpg" width="100%">
+            </div>
+            <ul>
+                <!-- apointment -->
+                <li>
+                    <a routerLink="/User/profile">
+                        <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Profile
+                        </span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+
+                        <span class="nav-text">
+                            LogOut
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+</ng-container>

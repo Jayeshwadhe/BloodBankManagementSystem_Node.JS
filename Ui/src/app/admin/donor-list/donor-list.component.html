@@ -1,0 +1,35 @@
+<div class=" shadow p-3" style="background-color: white;">
+  <h1 >Total Donar</h1>
+  <table  class="table  red">
+          <thead>
+              <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Father_name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Number</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Blood_Group</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">DA</th>
+                  <!-- <th scope="col">Updata</th>
+                  <th scope="col">Delete</th> -->
+              </tr>
+          </thead>
+     <tbody>
+      <tr *ngFor="let item of Array1;let i=index">
+          <td scope="col">{{i+1}}</td>
+          <td scope="col">{{item.Name}}</td>
+          <td scope="col">{{item.father_name}}</td>
+          <td scope="col">{{item.email}}</td>
+          <td scope="col">{{item.number}}</td>
+          <td scope="col">{{item.address}}</td>
+          <td scope="col">{{item.blood_g}}</td>
+          <td scope="col">{{item.age}}</td>
+          <td scope="col">{{item.DA}}</td>
+          <!-- <td> <button class="btn btn-primary"  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="Accept(item)">Accept</button></td>
+          <td> <a class="btn btn-danger" (click)="Delete(item.Id)">Delete</a></td> -->
+      </tr>
+     </tbody>
+  </table>
+</div>

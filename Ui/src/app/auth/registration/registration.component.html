@@ -1,0 +1,64 @@
+<app-header></app-header>
+<div class="limiter" id="login">
+  <div class="container-login100"
+    >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-5 col-md-offset-1">
+          <div class="login_topimg">
+          </div>
+          <div class="wrap-login100">
+            <form [formGroup]="registrationForm" class="r-form">
+              <span class="login100-form-title mb-3">Registration</span>
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Name" formControlName="Name">
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Father Name" formControlName="father_name">
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Email" type="email" formControlName="email">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Number" type="text" formControlName="number">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Address" formControlName="address">
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput placeholder="age" formControlName="age" type="number">
+              </mat-form-field>
+              <mat-form-field>
+                <mat-select matInput placeholder="Blood Group" formControlName="blood_g">
+                  <mat-option *ngFor="let Blood of Bloods" [value]="Blood.value">
+                    {{Blood.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <!-- <mat-form-field>
+                <mat-select matInput placeholder="DA" formControlName="DA">
+                  <mat-option *ngFor="let db of db" [value]="db.value">
+                    {{db.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field> -->
+              <mat-form-field>
+                <input matInput placeholder="Date of birth" type="date" formControlName="date">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Password" formControlName="password">
+              </mat-form-field>
+              <br>
+              <button type="button" class="btn btn-primary m-1 p-2 w-25"
+                (click)="AddData(registrationForm.value)">Registration
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

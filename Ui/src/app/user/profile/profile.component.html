@@ -1,0 +1,38 @@
+<div class="row mx-0">
+    <div class="col-md-12">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="card-title">Profile</h1>
+                <hr>
+                <div class="d-flex ">
+                    <div class="col-md-4">
+                        <p class="text">Name : </p>
+                        <p class="text">Father Name : </p>
+                        <p class="text">Email :</p>
+                        <p class="text">Number :</p>
+                        <p class="text">Address :</p>
+                        <p class="text">Blood Group :</p>
+                        <p class="text">Donar/recipent:</p>
+                        <p class="text">Age:</p>
+                        <p class="text">Blood:</p>
+                        <!-- <p class="text">Status:</p> -->
+                    </div>
+                    <!-- *ngFor="let item of Array1;let i=index" -->
+                    <div class="col-md-8" *ngFor="let item of arr1">
+                        <p class="text">{{item.Name}}</p>
+                        <p class="text">{{item.father_name}}</p>
+                        <p class="text">{{item.email}}</p>
+                        <p class="text">{{item.number}}</p>
+                        <p class="text">{{item.address}}</p>
+                        <p class="text">{{item.blood_g}}</p>
+                        <p class="text">{{item.DA}}</p>
+                        <p class="text">{{item.age}}</p>
+                        <p class="text">{{item.amount}}</p>
+                        <!-- <p class="text">{{item.isActive}}</p> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
